@@ -19,17 +19,6 @@ function Navigation({ page, handlePageChange }) {
       <li className="nav-item">
         <a
           href="#home"
-          onClick={() => handlePageChange("About")}
-          //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
-
-          className={page === "About" ? "nav-link active" : "nav-link"}
-        >
-          About
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#home"
           onClick={() => handlePageChange("Projects")}
           //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
 
@@ -46,7 +35,7 @@ function Navigation({ page, handlePageChange }) {
 
           className={page === "Contact" ? "nav-link active" : "nav-link"}
         >
-          Contact
+          Contact / Resume
         </a>
       </li>
     </ul>
