@@ -12,7 +12,7 @@ function Header() {
           iterations={1}
           effect="verticalFadeIn"
           effectChange={2}
-          effectDirection="up"
+          effectDuration={1}
         />
       </h1>
       <h2>
@@ -21,7 +21,8 @@ function Header() {
           iterations={1}
           effect="fadeIn"
           effectChange={2}
-          effectDirection="up"
+          effectDuration={1}
+          effectDelay={0.5}
         />
       </h2>
     </header>

@@ -7,7 +7,6 @@ export default function Home() {
     <div>
       <div class="headline">
         <img src={JakePicture} id="profilePicture" alt="" />
-        <h1>About</h1>
       </div>
       <div class="description">
         <p>

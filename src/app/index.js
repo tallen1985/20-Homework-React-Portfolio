@@ -3,7 +3,6 @@ import Navigation from "../navigation";
 import MemoHeader from "../header";
 import Project from "../project";
 import Footer from "../footer";
-import "./style.css";
 
 function App() {
   const [page, setCurrentPage] = useState("Home");
@@ -12,10 +11,10 @@ function App() {
 
   return (
     <main>
-      <MemoHeader />
-      <ul>
+      <div id="headerBox">
+        <MemoHeader />
         <Navigation page={page} handlePageChange={handlePageChange} />
-      </ul>
+      </div>
       <div>
         <Project currentPage={page} />
       </div>

@@ -11,6 +11,17 @@ html {
 body {
     background-color: var(--background)
 }
+#headerBox {
+    margin: 0 auto;
+    width:70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.header {
+    flex: 1 0 50%;
+}
 #projectWindow {
     background-image: url(./img/background.jpeg);
     background-size: cover;
