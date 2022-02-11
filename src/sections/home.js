@@ -5,10 +5,10 @@ import JakePicture from "./img/Jake-50pc.jpg";
 export default function Home() {
   return (
     <div>
-      <div class="headline">
+      <div className="headline">
         <img src={JakePicture} id="profilePicture" alt="" />
       </div>
-      <div class="description">
+      <div className="description">
         <p>
           Software Engineer with a strong customer service background to fully
           realize the needs of clients on the web. I am currently a student of

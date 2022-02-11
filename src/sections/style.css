@@ -1,102 +1,93 @@
 /* Root for Variable Declaration */
 :root {
-    --background: #166088;
-    --foreground: #DBE9EE;
-    --mainBackground: rgba(219,233,238, .8);
-    --linkBorder: 3px solid;
+  --background: #166088;
+  --foreground: #dbe9ee;
+  --mainBackground: rgba(219, 233, 238, 0.8);
+  --linkBorder: 3px solid;
 }
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-    background-color: var(--background)
+  background-color: var(--background);
 }
 #headerBox {
-    margin: 0 auto;
-    width:70%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
 }
 .header {
-    flex: 1 0 50%;
+  flex: 1 0 50%;
 }
 #projectWindow {
-    background-image: url(./img/background.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 70%;
-    height: 600px;
-    margin: 2em auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 2px 2px 2px black;
+  background-image: url(./img/background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 70%;
+  height: 600px;
+  margin: 2em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px black;
 }
 #textWindow {
-    width: 80%;
-    height: 80%;
-    background: rgba(255,255,255, .8);
-    padding: 2em;
-    text-align: center;
-    overflow-x: scroll;
-    transition: opacity 0.5s ease-in-out;
+  width: 80%;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2em;
+  text-align: center;
+  overflow-x: scroll;
+  transition: opacity 0.5s ease-in-out;
 }
 
 #textWindow h1 {
-    color: var(--background);
+  color: var(--background);
 }
 
 #profilePicture {
-    width: 150px;
+  width: 150px;
 }
 
 h1 {
-    font-size: 250%;
-    font-weight: 500;
+  font-size: 250%;
+  font-weight: 500;
 }
 
 h2 {
-    font-size: 150%;
-    font-weight: 500;
+  font-size: 150%;
+  font-weight: 500;
 }
 
 /* Header Styling */
 
 /* Article Styling - Each section is a separate article but styled the same*/
-article {
-    display: flex;
-    width: 100%;
-    margin: 25px auto;
-    padding: 25px 0;
-    justify-content: flex-start;
-    flex-direction: column;
-    overflow: hidden;
-    overflow-y: scroll;
-    align-items: center;
-    opacity: 0;
-    transition: all 1s;
-    color: darkslategray)
+.headline {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+  color: darkslategray;
 }
-    article .headline {
-        width: 75%;
-        text-align: center;
-        margin: 0 auto;
-        color: darkslategray;
-        
-    }
-    article .description {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width:85%;
-    }
-    article .visible {
-        opacity: 1;
-    }
-#about {
-    display: flex;
+.description {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+.description a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.description a:hover {
+  text-decoration: underline;
+  font-size: 1.2rem;
+  transition: font-size 0.3s ease-in;
 }
 /* Works Section Styling - Provides basic placeholder style that is
         overruled by specific ID as projects are added */
@@ -110,80 +101,79 @@ article {
     border: 2px solid darkslategray;
     border-radius: 3px;
 } */
-    .workCard div {
-        background-color: var(--foreground);
-        color:darkslategray;
-        position:absolute;
-        bottom: 15px;
-        left: 0px;
-        width: max-content;
-        padding: 0 10px;
-        z-index: 2;
-        
-    }
-    .workCard::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 1;
-        content: "";
-        background: rgb(4, 198, 224) 70% 0 repeat-x;
-        transition: opacity .3s;
-        opacity: .4;
-    }
+.workCard div {
+  background-color: var(--foreground);
+  color: darkslategray;
+  position: absolute;
+  bottom: 15px;
+  left: 0px;
+  width: max-content;
+  padding: 0 10px;
+  z-index: 2;
+}
+.workCard::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  content: "";
+  background: rgb(4, 198, 224) 70% 0 repeat-x;
+  transition: opacity 0.3s;
+  opacity: 0.4;
+}
 
-    .large {
-        width: 100%;
-        height: 250px;
-    }
-    .large .cardDescription {
-        width: 70%;
-    }
-    .small {
-        flex: 1 0 350px;
-    }
-    .workCard:hover::after{
-        transition: opacity .3s;
-        opacity: 0;
-    }
+.large {
+  width: 100%;
+  height: 250px;
+}
+.large .cardDescription {
+  width: 70%;
+}
+.small {
+  flex: 1 0 350px;
+}
+.workCard:hover::after {
+  transition: opacity 0.3s;
+  opacity: 0;
+}
 
-    .workCard .links {
-        display: flex;
-        flex-wrap: wrap;
-        visibility: hidden;
-        opacity: 0;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 3;
-        justify-content: space-evenly;
-        align-items: center;
-        transition: all 0.3s ease-in-out;
-        background-color: rgba(158,202,204, 0.9);
-    }
-    .workCard .links h3 {
-        font-size: 1.0rem;
-        color:black;
-        width: 100%;
-        text-align: center;
-    }
-    .workCard .cardLink {
-        font-size: 1.2rem;
-        font-weight: bold;
-        text-decoration: none;
-        transition: opacity .4s ease-in-out;
-    }
-    .workCard .cardLink:hover{
-        color: var(--mainBackground);
-    }
+.workCard .links {
+  display: flex;
+  flex-wrap: wrap;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(158, 202, 204, 0.9);
+}
+.workCard .links h3 {
+  font-size: 1rem;
+  color: black;
+  width: 100%;
+  text-align: center;
+}
+.workCard .cardLink {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: opacity 0.4s ease-in-out;
+}
+.workCard .cardLink:hover {
+  color: var(--mainBackground);
+}
 
-    /* #cryptoWallet {
+/* #cryptoWallet {
         background-color: #EDE7D9;
         background-image: url(../images/cryptoWallet-screenshot.jpg);
         background-size: 100%;
@@ -215,141 +205,108 @@ article {
         min-width: 300px;
     } */
 .cardDescription {
-    max-width: 80%;
+  max-width: 80%;
 }
 .cardDescription p {
-    width: 95%;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
+  width: 95%;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 }
 /* Contact Section Styling */
 #contactList ul {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    text-align: center;
-    justify-content: space-evenly;
-    padding-left: 0;
-
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 0;
 }
-
-    #contactList ul li {
-        display: inline-block;
-        padding:30px 10px 5px 10px;
-    }
-        #contactList ul li a {
-            text-decoration: none;
-            transition: color .7s;
-            color: var(--background);
-        }
-        #contactList ul li:hover a {
-            color: darkslategray;
-            border-bottom: var(--linkBorder) darkslategray;
-        }
 
 /* Resume Styling */
 .resumeSection a {
-    margin: 0 auto;
-    text-decoration: none;
-    padding:30px 10px 5px 10px;
-    transition: color .7s;
-    color: var(--background);
-}
-.resumeSection a:hover {
-    color: darkslategray;
-    border-bottom: var(--linkBorder) darkslategray
-}
-    .resumeSection img {
-        height:30px;
-    }
-/* Footer Styling */
-footer{
-    display: flex;
-    background-color: var(--background);
-    color: var(--foreground);
-    height: 50px;
-    margin: 25px 0;
-    align-items: center;
-    justify-content: center;
-}
-footer i {
-    font-size: 2rem;
-    padding: 0 10px;
-    color: var(--foreground);
+  margin: 0 auto;
+  text-decoration: none;
+  color: var(--background);
 }
 
-.accordion-body {
-    background-color:var(--mainBackground);
+.resumeSection img {
+  height: 30px;
+}
+/* Footer Styling */
+footer {
+  display: flex;
+  background-color: var(--background);
+  color: var(--foreground);
+  height: 50px;
+  margin: 25px 0;
+  align-items: center;
+  justify-content: center;
+}
+footer i {
+  font-size: 2rem;
+  padding: 0 10px;
+  color: var(--foreground);
 }
 
 /* Media Queries for smaller screens */
 @media screen and (max-width: 950px) {
-    #jumbotron {
-        display: none;
-    }
-    header {
-        height: 120px;
-    }
-    header div {
-        flex: 1 1 350px;
-    }
-    header div h3 {
-        display: block;
-    }
-    header h1,
-    header nav {
-      margin: 0 auto;
-    }
-    header nav {
-        display: none;
-    }
-    article {
-        width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    article .headline {
-        text-align: center;
-    }
-    article .description {
-        width: 90%;
-        border: 0;
-    }
-    #accordionSection {
-        display:block
-    }
-    #nonAccordionSection {
-        display: none;
-    }
-    #contactList ul {
-        padding: 0;
-    }
-    .resumeSection {
-        text-align: center;
-    }
-
+  header {
+    height: 120px;
+  }
+  header div {
+    flex: 1 1 350px;
+  }
+  header div h3 {
+    display: block;
+  }
+  header h1,
+  header nav {
+    margin: 0 auto;
+  }
+  header nav {
+    display: none;
+  }
+  .article {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .article .headline {
+    text-align: center;
+  }
+  .article .description {
+    width: 90%;
+    border: 0;
+  }
+  #accordionSection {
+    display: block;
+  }
+  #nonAccordionSection {
+    display: none;
+  }
+  #contactList ul {
+    padding: 0;
+  }
+  .resumeSection {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 674px) {
-    header div {
-        width: 100%;
-        padding: 0;
-        text-align: center;
-    }
-    header div h3 {
-        display: block;
-    }
-    .bottomBorderLink {
-        padding: 0;
-    }
-    #accordionSection {
-        display:block
-    }
-    #nonAccordionSection {
-        display: none;
-    }
+  header div {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  header div h3 {
+    display: block;
+  }
+  .bottomBorderLink {
+    padding: 0;
+  }
 }
-@media (hover:hover) {
-    nav ul li:hover a{
-        color: var(--background);
-    }
+@media (hover: hover) {
+  nav ul li:hover a {
+    color: var(--background);
+  }
 }

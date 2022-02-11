@@ -9,8 +9,6 @@ function Navigation({ page, handlePageChange }) {
         <a
           href="#home"
           onClick={() => handlePageChange("Home")}
-          //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
-
           className={page === "Home" ? "nav-link active" : "nav-link"}
         >
           Home
@@ -20,8 +18,6 @@ function Navigation({ page, handlePageChange }) {
         <a
           href="#home"
           onClick={() => handlePageChange("Projects")}
-          //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
-
           className={page === "Projects" ? "nav-link active" : "nav-link"}
         >
           Projects
@@ -31,8 +27,6 @@ function Navigation({ page, handlePageChange }) {
         <a
           href="#home"
           onClick={() => handlePageChange("Contact")}
-          //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
-
           className={page === "Contact" ? "nav-link active" : "nav-link"}
         >
           Contact / Resume
