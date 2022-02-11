@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/20-Homework-React-Portfolio/static/css/main.d8dbf821.css",
-    "main.js": "/20-Homework-React-Portfolio/static/js/main.16615090.js",
+    "main.css": "/20-Homework-React-Portfolio/static/css/main.a2f6f018.css",
+    "main.js": "/20-Homework-React-Portfolio/static/js/main.c92f6dc4.js",
     "static/js/787.1ed0c42c.chunk.js": "/20-Homework-React-Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/background.jpeg": "/20-Homework-React-Portfolio/static/media/background.dc2b865e09ca9f631317.jpeg",
     "static/media/Jake-50pc.jpg": "/20-Homework-React-Portfolio/static/media/Jake-50pc.0298d7e2d3fc2c8597a4.jpg",
+    "static/media/pdf-logo.png": "/20-Homework-React-Portfolio/static/media/pdf-logo.58dbe72757a871f06723.png",
     "index.html": "/20-Homework-React-Portfolio/index.html",
-    "main.d8dbf821.css.map": "/20-Homework-React-Portfolio/static/css/main.d8dbf821.css.map",
-    "main.16615090.js.map": "/20-Homework-React-Portfolio/static/js/main.16615090.js.map",
+    "main.a2f6f018.css.map": "/20-Homework-React-Portfolio/static/css/main.a2f6f018.css.map",
+    "main.c92f6dc4.js.map": "/20-Homework-React-Portfolio/static/js/main.c92f6dc4.js.map",
     "787.1ed0c42c.chunk.js.map": "/20-Homework-React-Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8dbf821.css",
-    "static/js/main.16615090.js"
+    "static/css/main.a2f6f018.css",
+    "static/js/main.c92f6dc4.js"
   ]
 }
