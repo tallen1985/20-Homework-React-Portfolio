@@ -12,7 +12,7 @@ function Navigation({ page, handlePageChange }) {
           onClick={() => handlePageChange("Home")}
           className={page === "Home" ? "nav-link active" : "nav-link"}
         >
-          Home
+          About Me
         </Link>
       </li>
       <li className="nav-item">
@@ -30,7 +30,7 @@ function Navigation({ page, handlePageChange }) {
           onClick={() => handlePageChange("Contact")}
           className={page === "Contacts" ? "nav-link active" : "nav-link"}
         >
-          Contact
+          Contact / Resume
         </Link>
       </li>
     </ul>

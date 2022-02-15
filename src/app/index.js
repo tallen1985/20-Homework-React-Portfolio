@@ -21,6 +21,9 @@ function App() {
         </div>
         <div id="projectWindow">
           <div id="textWindow">
+            <Route exact path="/20-Homework-React-Portfolio">
+              <Home />
+            </Route>
             <Route exact path="/">
               <Home />
             </Route>

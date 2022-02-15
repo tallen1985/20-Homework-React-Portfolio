@@ -101,113 +101,31 @@ h2 {
   position: relative;
   /* background-image: url(./img/images/what-is-coding.jpeg); */
   height: 150px;
-  border: 5px solid var(--foreground);
   border: 2px solid darkslategray;
   border-radius: 3px;
 }
 .workCard div {
-  background-color: var(--foreground);
   color: darkslategray;
   position: absolute;
   bottom: 15px;
   left: 0px;
-  width: max-content;
+  width: 100%;
   padding: 0 10px;
   z-index: 2;
 }
-.workCard::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  content: "";
-  background: rgb(4, 198, 224) 70% 0 repeat-x;
-  transition: opacity 0.3s;
-  opacity: 0.4;
-}
 
-.large {
-  width: 100%;
-  height: 250px;
-}
 .large .cardDescription {
-  width: 70%;
+  width: 100%;
 }
 .small {
-  flex: 1 0 350px;
-}
-.workCard:hover::after {
-  transition: opacity 0.3s;
-  opacity: 0;
-}
-
-.workCard .links {
-  display: flex;
-  flex-wrap: wrap;
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 3;
-  justify-content: space-evenly;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
-  background-color: rgba(158, 202, 204, 0.9);
-}
-.workCard .links h3 {
-  font-size: 1rem;
-  color: black;
-  width: 100%;
-  text-align: center;
+  flex: 1 0 500px;
 }
 .workCard .cardLink {
   font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
-  transition: opacity 0.4s ease-in-out;
-}
-.workCard .cardLink:hover {
-  color: var(--mainBackground);
 }
 
-#cryptoWallet {
-  background-color: #ede7d9;
-  background-image: url(/src/sections/img/cryptoWallet-screenshot.jpg);
-  background-size: 100%;
-  background-position: 50% 15%;
-  background-repeat: no-repeat;
-  min-width: 300px;
-}
-#weatherDashboard {
-  background-color: #ede7d9;
-  background-image: url(/src/sections/img/06-Homework-screenshot.jpg);
-  background-size: 100%;
-  background-position: top;
-  background-repeat: no-repeat;
-  min-width: 300px;
-}
-#eCommerceBackend {
-  background-color: #ede7d9;
-  background-image: url(/src/sections/img/13-Homework-screenshot.jpg);
-  background-size: 100%;
-  background-position: 50% 15%;
-  background-repeat: no-repeat;
-  min-width: 300px;
-}
-#noteTaker {
-  background-color: #ede7d9;
-  background-image: url(/src/sections/img/11-Homework-screenshot.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  min-width: 300px;
-}
 a > .cardDescription {
   max-width: 80%;
 }

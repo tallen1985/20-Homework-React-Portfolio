@@ -1,7 +1,35 @@
 import React from "react";
 import "./style.css";
+import Project from "../project";
 
 export default function Projects() {
+  const assignments = [
+    {
+      name: "eCommerceBackend",
+      url: "https://watch.screencastify.com/v/WfPoKfWJtRiI2LsLfQyc",
+      description: "CRUD/API/MySql/Sequelize/Dotenv",
+      screenshot: "/13-Homework-screenshot.jpg",
+    },
+    {
+      name: "CryptoWallet",
+      url: "https://tallen1985.github.io/cryptocurrencyWallet/",
+      description: "CRUD/API/MySql/Sequelize/Dotenv",
+      screenshot: "/cryptoWallet-screenshot.jpg",
+    },
+    {
+      name: "Weather Dashboard",
+      url: "https://tallen1985.github.io/06-Homework-Weather-Dashboard/",
+      description: "Server-side API/LocalStorage/UI-UX Design",
+      screenshot: "/src/sections/img/11-Homework-screenshot.jpg)",
+    },
+    {
+      name: "Note Taker",
+      url: "https://troy-allen-note-taker.herokuapp.com/",
+      description: "Back End Server Integration/Express",
+      screenshot: "/src/sections/img/11-Homework-screenshot.jpg)",
+    },
+  ];
+
   return (
     <div>
       <article className="work" id="work">
@@ -9,69 +37,10 @@ export default function Projects() {
           <h1>Works</h1>
         </div>
         <div className="description">
-          <div
-            className="workCard large"
-            id="eCommerceBackend"
-            data-active="false"
-          >
-            <a
-              className="cardLink"
-              href="https://watch.screencastify.com/v/WfPoKfWJtRiI2LsLfQyc"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="cardDescription">
-                <h2>E-Commerce Backend</h2>
-                <p>CRUD/API/MySql/Sequelize/Dotenv</p>
-              </div>
-            </a>
-          </div>
-
-          <div className="workCard small" id="cryptoWallet" data-active="false">
-            <a
-              className="cardLink"
-              href="https://tallen1985.github.io/cryptocurrencyWallet/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="cardDescription">
-                <h2>CryptoCurrency Wallet</h2>
-                <p>API/LocalStorage/Library Integration</p>
-              </div>
-            </a>
-          </div>
-
-          <div
-            className="workCard small"
-            id="weatherDashboard"
-            data-active="false"
-          >
-            <a
-              className="cardLink"
-              href="https://tallen1985.github.io/06-Homework-Weather-Dashboard/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="cardDescription">
-                <h2>Weather Dashboard</h2>
-                <p>Server-side API/LocalStorage/UI-UX Design</p>
-              </div>
-            </a>
-          </div>
-
-          <div className="workCard small" id="noteTaker" data-active="false">
-            <a
-              className="cardLink"
-              href="https://troy-allen-note-taker.herokuapp.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="cardDescription">
-                <h2>Note Taker</h2>
-                <p>Back End Server Integration/Express</p>
-              </div>
-            </a>
-          </div>
+          {assignments.map((item) => {
+            return <Project key={item.name} project={item} />;
+          })}
+          ;
         </div>
       </article>
     </div>
