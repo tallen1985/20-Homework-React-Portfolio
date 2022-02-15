@@ -41,6 +41,6 @@ Any additional questions, reach me at my email jake.allen@me.com
 
 [Github Repo](https://github.com/tallen1985/20-Homework-React-Portfolio)
 
-[Live Site](https://github.com/tallen1985/20-Homework-React-Portfolio)
+[Live Site](https://tallen1985.github.io/20-Homework-React-Portfolio/)
 
 ![Screenshot](./localhost_3000_contact.jpg)
