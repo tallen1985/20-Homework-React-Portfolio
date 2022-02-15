@@ -15,7 +15,6 @@
   npm i
   ## Usage
 
-
 ## Testing
 
 none
@@ -40,4 +39,8 @@ Any additional questions, reach me at my email jake.allen@me.com
 
 ## Link and Screenshot
 
-[Github Repo] (http://)
+[Github Repo](https://github.com/tallen1985/20-Homework-React-Portfolio)
+
+[Live Site](https://github.com/tallen1985/20-Homework-React-Portfolio)
+
+![Screenshot](./localhost_3000_contact.jpg)
