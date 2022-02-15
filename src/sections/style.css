@@ -15,12 +15,16 @@ body {
   margin: 0 auto;
   width: 70%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-evenly;
 }
 .header {
-  flex: 1 0 50%;
+  flex: 1 0 400px;
+}
+#headerBox ul {
+  padding-left: 0;
+  flex: 1 0 400px;
 }
 #projectWindow {
   background-image: url(./img/background.jpeg);
@@ -91,16 +95,16 @@ h2 {
 }
 /* Works Section Styling - Provides basic placeholder style that is
         overruled by specific ID as projects are added */
-/* .workCard {
-    position: relative;
-    margin: 5px 5px 5px 0;
-    position: relative;
-    background-image: url(../images/what-is-coding.jpeg);
-    height: 150px;
-    border: 5px solid var(--foreground);
-    border: 2px solid darkslategray;
-    border-radius: 3px;
-} */
+.workCard {
+  position: relative;
+  margin: 5px 5px 5px 0;
+  position: relative;
+  /* background-image: url(./img/images/what-is-coding.jpeg); */
+  height: 150px;
+  border: 5px solid var(--foreground);
+  border: 2px solid darkslategray;
+  border-radius: 3px;
+}
 .workCard div {
   background-color: var(--foreground);
   color: darkslategray;
@@ -173,38 +177,38 @@ h2 {
   color: var(--mainBackground);
 }
 
-/* #cryptoWallet {
-        background-color: #EDE7D9;
-        background-image: url(../images/cryptoWallet-screenshot.jpg);
-        background-size: 100%;
-        background-position: 50% 15%;;
-        background-repeat: no-repeat;
-        min-width: 300px;
-    }
-    #weatherDashboard {
-        background-color: #EDE7D9;
-        background-image: url(../images/06-Homework-screenshot.jpg);
-        background-size: 100%;
-        background-position: top;
-        background-repeat: no-repeat;
-        min-width: 300px;
-    }
-    #eCommerceBackend {
-        background-color: #EDE7D9;
-        background-image: url(../images/13-Homework-screenshot.jpg);
-        background-size: 100%;
-        background-position: 50% 15%;
-        background-repeat: no-repeat;
-        min-width: 300px;
-    }
-    #noteTaker {
-        background-color: #EDE7D9;
-        background-image: url(../images/11-Homework-screenshot.jpg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        min-width: 300px;
-    } */
-.cardDescription {
+#cryptoWallet {
+  background-color: #ede7d9;
+  background-image: url(/src/sections/img/cryptoWallet-screenshot.jpg);
+  background-size: 100%;
+  background-position: 50% 15%;
+  background-repeat: no-repeat;
+  min-width: 300px;
+}
+#weatherDashboard {
+  background-color: #ede7d9;
+  background-image: url(/src/sections/img/06-Homework-screenshot.jpg);
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-width: 300px;
+}
+#eCommerceBackend {
+  background-color: #ede7d9;
+  background-image: url(/src/sections/img/13-Homework-screenshot.jpg);
+  background-size: 100%;
+  background-position: 50% 15%;
+  background-repeat: no-repeat;
+  min-width: 300px;
+}
+#noteTaker {
+  background-color: #ede7d9;
+  background-image: url(/src/sections/img/11-Homework-screenshot.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-width: 300px;
+}
+a > .cardDescription {
   max-width: 80%;
 }
 .cardDescription p {
@@ -213,14 +217,19 @@ h2 {
   text-overflow: ellipsis;
 }
 /* Contact Section Styling */
-#contactList ul {
+#contactList {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  text-align: center;
-  align-items: center;
-  justify-content: space-evenly;
-  padding-left: 0;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3em;
+}
+#contactList .form {
+  flex: 1 0 400px;
+}
+#contactList .form input {
+  margin: 1em 0;
+  width: 70%;
 }
 
 /* Resume Styling */
@@ -232,6 +241,9 @@ h2 {
 
 .resumeSection img {
   height: 30px;
+}
+
+.form {
 }
 /* Footer Styling */
 footer {
@@ -251,21 +263,10 @@ footer i {
 
 /* Media Queries for smaller screens */
 @media screen and (max-width: 950px) {
-  header {
-    height: 120px;
-  }
-  header div {
-    flex: 1 1 350px;
-  }
-  header div h3 {
-    display: block;
-  }
-  header h1,
-  header nav {
-    margin: 0 auto;
-  }
-  header nav {
-    display: none;
+  #headerBox,
+  #projectWindow,
+  footer {
+    width: 100%;
   }
   .article {
     width: 100%;
@@ -278,15 +279,6 @@ footer i {
   .article .description {
     width: 90%;
     border: 0;
-  }
-  #accordionSection {
-    display: block;
-  }
-  #nonAccordionSection {
-    display: none;
-  }
-  #contactList ul {
-    padding: 0;
   }
   .resumeSection {
     text-align: center;

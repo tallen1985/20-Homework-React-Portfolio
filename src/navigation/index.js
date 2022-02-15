@@ -1,36 +1,37 @@
 import React from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 function Navigation({ page, handlePageChange }) {
   console.log(page);
   return (
     <ul>
       <li className="nav-item">
-        <a
-          href="#home"
+        <Link
+          to="/"
           onClick={() => handlePageChange("Home")}
           className={page === "Home" ? "nav-link active" : "nav-link"}
         >
           Home
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
-        <a
-          href="#home"
+        <Link
+          to="/projects"
           onClick={() => handlePageChange("Projects")}
           className={page === "Projects" ? "nav-link active" : "nav-link"}
         >
           Projects
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
-        <a
-          href="#home"
+        <Link
+          to="/contact"
           onClick={() => handlePageChange("Contact")}
-          className={page === "Contact" ? "nav-link active" : "nav-link"}
+          className={page === "Contacts" ? "nav-link active" : "nav-link"}
         >
-          Contact / Resume
-        </a>
+          Contact
+        </Link>
       </li>
     </ul>
   );
